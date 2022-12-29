@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: none; */
+    /* border: none; */
+
+    box-sizing: border-box;
+}
+
+body {
+    /* padding: 10px; */
+    /* margin: 10px; */
+    /* background-color:brown; */
+    /* color: burlywood; */
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    word-wrap: break-word;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+
+ul {
+    /* list-style: none; */
+}
+
+a {
+    text-decoration: none;
+    /* color: burlywood; */
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    /* margin: 10px 0; */
+    /* padding: 20px; */
+    /* background-color: rgb(79, 68, 44); */
+}
+
+/*
+#navbar{
+    width: 30vw;
+    height: 100vh;
+    float: left;
+    top: 50px;
+    left: 20px;
+    bottom: 20px;
+    position: fixed;
+}
+
+#main-doc{
+    width: 70vw;
+    height: 100vh;
+    float: right;
+} */
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+#navbar {
+    width: 20vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #263159;
+    overflow-y: hidden;
+}
+
+#navbar header {
+    color: #FFFBEB;
+    padding: 10px;
+    border: 0.5px solid #FFFBEB;
+}
+
+#navbar ul {
+    height: 100%;
+    padding: 10px 0;
+    list-style: none;
+    /* background-color: antiquewhite; */
+}
+
+#navbar ul li a {
+    display: block;
+    color: #FFFBEB;
+    padding: 10px;
+}
+
+#navbar ul li a:hover {
+    background-color: #FFFBEB;
+    color: #495579;
+    transition: all ease-in-out 400ms;
+}
+
+
+#main-doc {
+    width: 80vw;
+    margin-left: 20vw;
+    background-color: #FFFBEB;
+}
+
+.main-section {
+    padding: 1rem;
+    margin: 0 5px 5px 5px;
+    background-color: #495579;
+    color: white;
+
+}
+
+.main-section header {
+    margin: 10px 0;
+    font-size: 1.8rem;
+}
+
+.main-section p {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.main-section h5 {
+    margin: 20px 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.main-section hr {
+    color: #263159;
+    margin: 10px 0;
+}
+
+.main-section ul {
+    margin-left: 20px;
+}
+
+.main-section ul li {
+    font-size: 1.1rem;
+}
+
+
+@media screen and (min-width:200px) and (max-width:600px) {
+    .container {
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #navbar {
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #main-doc {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
